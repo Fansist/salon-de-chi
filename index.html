@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon de Chi | Japanese Hair Straightening &amp; Precision Cuts in Rancho Peñasquitos, San Diego</title>
+<meta name="description" content="Salon de Chi is a boutique one-stylist hair salon in Rancho Peñasquitos, San Diego, specializing in Japanese hair straightening, precision cuts, and color. Book with Chi today.">
+<meta name="theme-color" content="#f7f2ea">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Shippori+Mincho:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Palette: warm ivory paper, sumi ink, muted rose-gold accent, a deep jade whisper for variety */
+    --ivory: #f7f2ea;
+    --ivory-deep: #efe6d5;
+    --paper: #fbf8f2;
+    --beige: #e9dfc9;
+    --sumi: #1b1815;
+    --sumi-soft: #33302a;
+    --rose-gold: #b98b7a;
+    --rose-gold-deep: #7d4f3f;
+    --rose-gold-light: #dcb9ab;
+    --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.106 0 0 0 0 0.094 0 0 0 0 0.082 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --jade: #5f6f5c;
+    --jade-deep: #45543f;
+    --line: rgba(27, 24, 21, 0.12);
+    --line-soft: rgba(27, 24, 21, 0.07);
+    --max-w: 1180px;
+
+    --font-display: 'Shippori Mincho', serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --font-sans: 'Jost', sans-serif;
+
+    --dur: 0.5s;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --shadow-sm: 0 2px 10px -4px rgba(27, 24, 21, 0.18);
+    --shadow-md: 0 18px 40px -20px rgba(27, 24, 21, 0.35);
+    --shadow-lg: 0 30px 70px -28px rgba(27, 24, 21, 0.45);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--sumi);
+    font-family: var(--font-body);
+    font-size: clamp(1.05rem, 0.98rem + 0.3vw, 1.2rem);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  img, svg { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.22;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  p { margin: 0; }
+
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 5vw, 3rem);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 0.72rem;
+    color: var(--rose-gold-deep);
+    font-weight: 500;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid var(--rose-gold-deep);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection { background: var(--rose-gold-light); color: var(--sumi); }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--sumi);
+    color: var(--ivory);
+    padding: 0.75rem 1.25rem;
+    z-index: 1000;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+  }
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+  }
+
+  /* ---------- Header ---------- */
+  header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247, 242, 234, 0.86);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border-bottom: 1px solid var(--line);
+    transition: box-shadow var(--dur) var(--ease);
+  }
+  header.site-header.scrolled { box-shadow: var(--shadow-sm); }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    gap: 1rem;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: var(--sumi);
+  }
+
+  .brand-mark { width: 34px; height: 34px; flex-shrink: 0; }
+
+  .brand-name {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+
+  nav.primary-nav { display: none; }
+
+  nav.primary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: clamp(1rem, 2vw, 2.1rem);
+    margin: 0;
+    padding: 0;
+  }
+
+  nav.primary-nav a {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--sumi-soft);
+    position: relative;
+    padding-bottom: 4px;
+  }
+
+  nav.primary-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background: var(--rose-gold-deep);
+    transition: width 0.3s var(--ease);
+  }
+
+  nav.primary-nav a:hover::after,
+  nav.primary-nav a:focus-visible::after { width: 100%; }
+
+  .header-cta {
+    display: none;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ivory);
+    background: var(--sumi);
+    padding: 0.65rem 1.3rem;
+    border-radius: 3px;
+    white-space: nowrap;
+    transition: background var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .header-cta:hover { background: var(--rose-gold-deep); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+  .header-cta:active { transform: translateY(0); }
+
+  @media (min-width: 860px) {
+    nav.primary-nav { display: block; }
+    .header-cta { display: inline-block; }
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .menu-toggle:hover { background: var(--ivory-deep); border-color: var(--rose-gold); }
+  @media (min-width: 860px) { .menu-toggle { display: none; } }
+
+  .menu-toggle svg { width: 20px; height: 20px; }
+
+  #mobile-nav {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    border-top: 0 solid var(--line);
+    background: var(--ivory);
+    transition: max-height 0.4s var(--ease);
+  }
+  #mobile-nav.open { max-height: 320px; border-top-width: 1px; }
+  #mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem clamp(1.25rem, 5vw, 3rem) 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  #mobile-nav a {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--sumi);
+    display: block;
+    padding: 0.4rem 0;
+  }
+  @media (min-width: 860px) { #mobile-nav { display: none !important; } }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(4rem, 11vw, 7.5rem) 0 clamp(4rem, 9vw, 6rem);
+    background:
+      var(--noise),
+      radial-gradient(ellipse 60% 50% at 85% 8%, rgba(185, 139, 122, 0.20), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 8% 95%, rgba(95, 111, 92, 0.10), transparent 60%),
+      linear-gradient(180deg, var(--paper) 0%, var(--ivory-deep) 100%);
+  }
+
+  .hero-inner {
+    position: relative;
+    display: grid;
+    gap: 2.75rem;
+    align-items: center;
+  }
+
+  @media (min-width: 900px) {
+    .hero-inner { grid-template-columns: 1.08fr 0.92fr; gap: 3.5rem; }
+  }
+
+  .hero-text { max-width: 640px; }
+
+  .hero-text .eyebrow {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+    animation: fadeUp 0.9s var(--ease) forwards 0.1s;
+  }
+
+  h1.hero-title {
+    font-size: clamp(2.5rem, 5.4vw, 4.1rem);
+    color: var(--sumi);
+    opacity: 0;
+    animation: fadeUp 0.9s var(--ease) forwards 0.25s;
+  }
+
+  h1.hero-title .accent {
+    color: var(--rose-gold-deep);
+    font-style: italic;
+  }
+
+  .hero-tagline {
+    font-family: var(--font-body);
+    font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+    color: var(--sumi-soft);
+    margin-top: 1.5rem;
+    max-width: 46ch;
+    opacity: 0;
+    animation: fadeUp 0.9s var(--ease) forwards 0.4s;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.25rem;
+    opacity: 0;
+    animation: fadeUp 0.9s var(--ease) forwards 0.55s;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.95rem 1.9rem;
+    border-radius: 3px;
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .btn-primary { background: var(--sumi); color: var(--ivory); }
+  .btn-primary:hover { background: var(--rose-gold-deep); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .btn-primary:active { transform: translateY(0); box-shadow: var(--shadow-sm); }
+
+  .btn-secondary { background: transparent; color: var(--sumi); border-color: var(--sumi); }
+  .btn-secondary:hover { background: var(--sumi); color: var(--ivory); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .btn-secondary:active { transform: translateY(0); }
+
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: 6px;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--beige) 0%, var(--rose-gold-light) 55%, var(--rose-gold) 100%);
+    opacity: 0;
+    animation: fadeUp 1.1s var(--ease) forwards 0.5s;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .hero-visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(115deg, rgba(27,24,21,0.05) 0px, rgba(27,24,21,0.05) 1px, transparent 1px, transparent 34px);
+  }
+
+  .hero-visual svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+  .hero-visual-caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(0deg, rgba(27,24,21,0.55), transparent);
+    color: var(--ivory);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .hero-badge {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: rgba(251, 248, 242, 0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: var(--sumi);
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.55rem 0.9rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+    line-height: 1.4;
+  }
+  .hero-badge strong { display: block; font-family: var(--font-display); font-size: 0.95rem; letter-spacing: 0.02em; text-transform: none; color: var(--rose-gold-deep); }
+
+  /* ---------- Ornamental divider ---------- */
+  .divider {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0;
+    background: var(--ivory);
+  }
+  .divider svg { width: 120px; height: 20px; color: var(--rose-gold); opacity: 0.7; }
+
+  /* ---------- Section basics ---------- */
+  section { padding: clamp(4rem, 9vw, 7rem) 0; }
+
+  .section-head {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  .section-head .eyebrow { display: block; margin-bottom: 0.9rem; }
+  .section-head h2 { font-size: clamp(2rem, 4vw, 2.75rem); }
+  .section-head p.lede {
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    color: var(--sumi-soft);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  }
+  .reveal-stagger.is-visible > * { opacity: 1; transform: translateY(0); }
+  .reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.02s; }
+  .reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.1s; }
+  .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.18s; }
+  .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.26s; }
+  .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.34s; }
+
+  /* ---------- About ---------- */
+  .about { background: var(--noise), var(--ivory); }
+
+  .about-grid { display: grid; gap: 3rem; align-items: center; }
+
+  @media (min-width: 880px) {
+    .about-grid { grid-template-columns: 0.85fr 1.15fr; gap: 4rem; }
+  }
+
+  .about-mark {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, var(--rose-gold-light), var(--rose-gold-deep) 75%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-md);
+  }
+  .about-mark svg { width: 46%; height: 46%; }
+
+  .about-copy p { font-size: 1.2rem; margin-bottom: 1.4rem; color: var(--sumi-soft); }
+  .about-copy p:last-child { margin-bottom: 0; }
+  .about-copy strong { color: var(--sumi); font-weight: 600; }
+
+  /* ---------- Services ---------- */
+  .services { background: var(--ivory-deep); position: relative; }
+
+  .services-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .service-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2.25rem 2rem;
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+    position: relative;
+  }
+
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--rose-gold);
+  }
+
+  .service-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 1.25rem;
+    color: var(--rose-gold-deep);
+    transition: transform var(--dur) var(--ease);
+  }
+  .service-card:hover .service-icon { transform: scale(1.08) rotate(-4deg); }
+
+  .service-card h3 { font-size: 1.35rem; margin-bottom: 0.65rem; color: var(--sumi); }
+  .service-card p { font-family: var(--font-sans); font-size: 0.95rem; color: var(--sumi-soft); line-height: 1.6; }
+
+  /* ---------- Gallery (SVG art, no photos available) ---------- */
+  .gallery { background: var(--ivory); }
+
+  .gallery-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 720px) {
+    .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .gallery-tile {
+    aspect-ratio: 3/4;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .gallery-tile:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+  .gallery-tile svg { width: 100%; height: 100%; }
+
+  .gallery-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--sumi-soft);
+    opacity: 0.85;
+  }
+
+  /* ---------- Highlights strip ---------- */
+  .highlights {
+    background: var(--sumi);
+    color: var(--ivory);
+    padding: clamp(3rem, 7vw, 4.5rem) 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .highlights::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--noise), radial-gradient(circle at 90% 0%, rgba(185,139,122,0.16), transparent 55%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .highlights-grid {
+    display: grid;
+    gap: 2.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    position: relative;
+  }
+
+  @media (min-width: 720px) {
+    .highlights-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .highlight-item .num {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.4vw, 2.3rem);
+    color: var(--rose-gold-light);
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .highlight-item .label {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(247, 242, 234, 0.72);
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq { background: var(--ivory-deep); }
+
+  .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+
+  .faq-item {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .faq-item:hover { border-color: var(--rose-gold); }
+
+  .faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 1.4rem 1.6rem;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--sumi);
+    cursor: pointer;
+  }
+
+  .faq-question .icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: var(--rose-gold-deep);
+    transition: transform 0.35s var(--ease);
+  }
+  .faq-item[data-open="true"] .faq-question .icon { transform: rotate(45deg); }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease);
+  }
+  .faq-item[data-open="true"] .faq-answer { max-height: 300px; }
+
+  .faq-answer-inner {
+    padding: 0 1.6rem 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.98rem;
+    color: var(--sumi-soft);
+    line-height: 1.7;
+  }
+
+  /* ---------- Visit ---------- */
+  .visit { background: var(--ivory); }
+
+  .visit-grid { display: grid; gap: 2.5rem; }
+
+  @media (min-width: 880px) {
+    .visit-grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  }
+
+  .visit-card {
+    background: var(--ivory-deep);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: clamp(2rem, 4vw, 2.75rem);
+  }
+
+  .visit-card h3 { font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--sumi); }
+
+  .visit-row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  .visit-row:last-child { margin-bottom: 0; }
+
+  .visit-row svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--rose-gold-deep);
+  }
+
+  .visit-row .label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--rose-gold-deep);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+
+  .visit-row a,
+  .visit-row p {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    color: var(--sumi);
+    text-decoration: none;
+  }
+  .visit-row a:hover { color: var(--rose-gold-deep); }
+
+  .map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--sumi);
+    border-bottom: 1px solid var(--rose-gold-deep);
+    padding-bottom: 3px;
+    transition: color var(--dur) var(--ease), gap var(--dur) var(--ease);
+  }
+  .map-link:hover { color: var(--rose-gold-deep); gap: 0.8rem; }
+
+  .cta-panel {
+    background: linear-gradient(150deg, var(--sumi) 0%, var(--sumi-soft) 100%);
+    color: var(--ivory);
+    border-radius: 6px;
+    padding: clamp(2.25rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .cta-panel::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(185,139,122,0.35), transparent 70%);
+  }
+
+  .cta-panel h3 { font-size: 1.6rem; margin-bottom: 0.85rem; position: relative; }
+
+  .cta-panel p {
+    font-size: 1.1rem;
+    color: rgba(247, 242, 234, 0.82);
+    margin-bottom: 1.75rem;
+    position: relative;
+    max-width: 40ch;
+  }
+
+  .cta-panel .btn-primary { background: var(--rose-gold-deep); align-self: flex-start; position: relative; }
+  .cta-panel .btn-primary:hover { background: var(--rose-gold-light); color: var(--sumi); }
+
+  /* ---------- Footer ---------- */
+  footer.site-footer {
+    background: var(--noise), var(--ivory-deep);
+    border-top: 1px solid var(--line);
+    padding: 2.5rem 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .footer-inner { flex-direction: row; justify-content: space-between; text-align: left; }
+  }
+
+  .footer-brand { font-family: var(--font-display); font-size: 1.05rem; color: var(--sumi); }
+  .footer-meta { font-family: var(--font-sans); font-size: 0.82rem; color: var(--sumi-soft); letter-spacing: 0.03em; }
+
+  .footer-links { display: flex; gap: 1.5rem; list-style: none; padding: 0; margin: 0; }
+  .footer-links a { font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.04em; text-decoration: none; color: var(--sumi-soft); }
+  .footer-links a:hover { color: var(--rose-gold-deep); }
+</style>
+      <!-- SEO:START (generated by _seo_inject.js) -->
+    <link rel="canonical" href="https://fansist.github.io/salon-de-chi/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Salon de Chi" />
+    <meta property="og:title" content="Salon de Chi: Hair Salon in Rancho Penasquitos" />
+    <meta property="og:description" content="Precision Toni &amp; Guy haircuts, coloring and Japanese thermal reconditioning for curly, fine and thick hair." />
+    <meta property="og:url" content="https://fansist.github.io/salon-de-chi/" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Salon de Chi: Hair Salon in Rancho Penasquitos" />
+    <meta name="twitter:description" content="Precision Toni &amp; Guy haircuts, coloring and Japanese thermal reconditioning for curly, fine and thick hair." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"Salon de Chi","url":"https://fansist.github.io/salon-de-chi/","telephone":"(619) 438-1409","address":{"@type":"PostalAddress","addressLocality":"Black Mountain Rd","addressRegion":"CA","postalCode":"13179","addressCountry":"US"},"description":"Boutique one-stylist salon inside Phenix Salon Suites run by Chiharu ('Chi'), a Japanese stylist whose professional career began in Japan in 1996; the salon was established in San Diego in 2016. Specializes in Japanese hair straightening, coloring, precision cuts, and styling tailored to curly, f...","areaServed":{"@type":"City","name":"San Diego"}}</script>
+    <!-- SEO:END -->
+  </head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Salon de Chi, home">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#b98b7a" stroke-width="1"/>
+        <path d="M12 24c2-6 4-10 8-14 4 4 6 8 8 14-3-2-6-3-8-3s-5 1-8 3z" fill="#1b1815"/>
+        <circle cx="20" cy="10" r="1.6" fill="#b98b7a"/>
+      </svg>
+      <span class="brand-name">Salon de Chi</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-cta" href="tel:+16194381409">(619) 438-1409</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="7" x2="21" y2="7"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="17" x2="21" y2="17"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav id="mobile-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="tel:+16194381409">Call (619) 438-1409</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="eyebrow">Rancho Peñasquitos &middot; San Diego</span>
+        <h1 class="hero-title">Precision hair,<br><span class="accent">Japanese craft.</span></h1>
+        <p class="hero-tagline">Salon de Chi is a boutique one-stylist studio specializing in Japanese hair straightening, precision cuts, and color, meticulous, calm, artisan work from a stylist trained since 1996.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+16194381409">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (619) 438-1409
+          </a>
+          <a class="btn btn-secondary" href="#visit">Visit the Studio</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="strandGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1b1815" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#1b1815" stop-opacity="0.15"/>
+            </linearGradient>
+          </defs>
+          <g stroke="url(#strandGrad)" stroke-width="2" fill="none" stroke-linecap="round">
+            <path d="M60 40 C 20 140, 90 220, 50 340 S 120 460, 80 520"/>
+            <path d="M120 20 C 80 140, 160 200, 110 320 S 190 440, 140 520"/>
+            <path d="M190 10 C 230 130, 150 210, 210 320 S 140 440, 200 520"/>
+            <path d="M270 30 C 320 140, 240 220, 290 330 S 220 450, 270 520"/>
+            <path d="M340 50 C 300 150, 370 230, 320 340 S 380 460, 340 520"/>
+          </g>
+          <circle cx="200" cy="120" r="1.5" fill="#f7f2ea"/>
+          <circle cx="150" cy="220" r="1.5" fill="#f7f2ea"/>
+          <circle cx="260" cy="260" r="1.5" fill="#f7f2ea"/>
+        </svg>
+        <div class="hero-visual-caption">Thermal reconditioning &middot; precision cutting</div>
+        <div class="hero-badge">Est. San Diego<strong>2016</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 10c14-9 20 9 34 0s20 9 34 0 20 9 34 0 12-6 14-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-mark reveal">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#f7f2ea" stroke-width="1" opacity="0.6"/>
+          <path d="M50 15 C 30 40, 60 55, 40 80 M 50 15 C 70 40, 40 55, 60 80" stroke="#1b1815" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">About the Salon</span>
+        <h2 style="margin-top:0.75rem; margin-bottom:1.5rem;">Chi&rsquo;s craft, since 1996</h2>
+        <p>Salon de Chi is a boutique one-stylist salon inside Phenix Salon Suites, run by <strong>Chiharu (&ldquo;Chi&rdquo;)</strong>, a Japanese stylist whose professional career began in Japan in 1996. The salon was established in San Diego in 2016.</p>
+        <p>Chi specializes in <strong>Japanese hair straightening (thermal reconditioning)</strong>, coloring, and precision cuts using the Toni &amp; Guy scissor-cutting method, tailored to curly, fine, and thick straight hair.</p>
+        <p>The studio keeps things intimate: one stylist, one chair, and undivided attention for every appointment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services</span>
+        <h2>The Menu</h2>
+      </div>
+
+      <div class="services-grid reveal-stagger">
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+            <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>
+          </svg>
+          <h3>Haircuts</h3>
+          <p>Precision scissor cutting using the Toni &amp; Guy method, shaped to your hair&rsquo;s natural texture and growth.</p>
+        </div>
+
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5a4 4 0 0 0 8 0c0-2 1-3 1-5a5 5 0 0 0-5-5z"/>
+            <path d="M9 21h6"/><path d="M10 17v4"/><path d="M14 17v4"/>
+          </svg>
+          <h3>Hair Coloring</h3>
+          <p>Custom color work designed to complement your cut and condition your strands.</p>
+        </div>
+
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 12h4l3-9 4 18 3-9h4"/>
+          </svg>
+          <h3>Japanese Hair Straightening</h3>
+          <p>Thermal reconditioning for smooth, manageable results, Chi&rsquo;s signature specialty.</p>
+        </div>
+
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 14c2-6 4-9 8-12 4 3 6 6 8 12-3-2-6-3-8-3s-5 1-8 3z"/>
+            <path d="M12 14v7"/>
+          </svg>
+          <h3>Curly, Fine &amp; Thick Hair Styling</h3>
+          <p>Styling tailored to your specific hair type, whether curly, fine, or thick and straight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY (art, since no photos on file) ================= -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Craft</span>
+        <h2>An Artisan&rsquo;s Eye</h2>
+        <p class="lede">Every appointment is one-on-one, Chi&rsquo;s full attention, from consultation to final strand.</p>
+      </div>
+
+      <div class="gallery-grid reveal-stagger">
+        <div class="gallery-tile">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of flowing straightened hair strands">
+            <rect width="300" height="400" fill="#e9dfc9"/>
+            <g stroke="#96695a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.85">
+              <path d="M70 20 C 40 120, 100 200, 60 320 S 130 420, 90 480"/>
+              <path d="M140 10 C 110 120, 170 190, 130 300 S 190 410, 150 480"/>
+              <path d="M210 25 C 240 120, 170 200, 220 300 S 160 410, 210 480"/>
+            </g>
+          </svg>
+        </div>
+        <div class="gallery-tile">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of scissors and precision cutting motif">
+            <rect width="300" height="400" fill="#dcb9ab"/>
+            <g stroke="#1b1815" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+              <circle cx="110" cy="150" r="22"/><circle cx="110" cy="250" r="22"/>
+              <line x1="260" y1="90" x2="130" y2="235"/>
+              <line x1="185" y1="215" x2="260" y2="300"/>
+              <line x1="130" y1="165" x2="170" y2="200"/>
+            </g>
+          </svg>
+        </div>
+        <div class="gallery-tile">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a brush stroke, representing Japanese craft aesthetic">
+            <rect width="300" height="400" fill="#f7f2ea"/>
+            <path d="M60 100 C 100 60, 220 80, 240 160 C 255 220, 160 240, 130 300 C 105 350, 180 370, 220 340" stroke="#1b1815" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.82"/>
+            <circle cx="90" cy="330" r="4" fill="#96695a"/>
+          </svg>
+        </div>
+        <div class="gallery-tile">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a color palette motif for hair coloring services">
+            <rect width="300" height="400" fill="#5f6f5c"/>
+            <g opacity="0.9">
+              <circle cx="100" cy="140" r="46" fill="#dcb9ab"/>
+              <circle cx="180" cy="200" r="46" fill="#b98b7a"/>
+              <circle cx="120" cy="280" r="46" fill="#e9dfc9"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <p class="gallery-note">Illustrative artwork, see Chi&rsquo;s real work and client transformations on <a href="https://www.yelp.com/biz/salon-de-chi-san-diego-3" target="_blank" rel="noopener noreferrer" style="color:var(--rose-gold-deep); text-decoration:underline;">Yelp</a> and Instagram <strong>@sandiegohairbychi</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ================= HIGHLIGHTS ================= -->
+  <section class="highlights">
+    <div class="container">
+      <div class="highlights-grid reveal-stagger">
+        <div class="highlight-item">
+          <span class="num">Rancho Peñasquitos</span>
+          <span class="label">Neighborhood</span>
+        </div>
+        <div class="highlight-item">
+          <span class="num">44 Reviews</span>
+          <span class="label">On Yelp</span>
+        </div>
+        <div class="highlight-item">
+          <span class="num">Since 1996</span>
+          <span class="label">Stylist&rsquo;s Career Began</span>
+        </div>
+        <div class="highlight-item">
+          <span class="num">One Stylist</span>
+          <span class="label">Boutique Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Good to Know</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need an appointment?</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, Salon de Chi is a one-stylist studio, so appointments are booked directly with Chi. Call ahead to check availability, especially for straightening or color services that take longer.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is Japanese hair straightening?</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Also called thermal reconditioning, it&rsquo;s a chemical and heat process that permanently relaxes curls and frizz into smooth, straight hair. It&rsquo;s a specialty service, so plan for it to take longer than a standard appointment, ask Chi about timing and aftercare when you call.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can you work with curly or textured hair?</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes. Chi styles curly, fine, and thick straight hair, and tailors cuts and treatments to each hair type rather than a one-size-fits-all approach.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            <span>Where is the salon located?</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Salon de Chi is inside Phenix Salon Suites, Suite 107, at 13179 Black Mountain Rd in the Rancho Pe&ntilde;asquitos area of San Diego (92129). See the map link below for directions.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I book or ask a question?</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Call or text (619) 438-1409 directly. As a one-stylist studio, phone is the fastest way to reach Chi and confirm current availability and hours.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VISIT ================= -->
+  <section id="visit" class="visit">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Visit</span>
+        <h2>Find the Studio</h2>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <h3>Location &amp; Contact</h3>
+
+          <div class="visit-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span class="label">Address</span>
+              <p>Phenix Salon Suites, Suite 107<br>13179 Black Mountain Rd<br>San Diego, CA 92129</p>
+            </div>
+          </div>
+
+          <div class="visit-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <span class="label">Phone</span>
+              <a href="tel:+16194381409">(619) 438-1409</a>
+            </div>
+          </div>
+
+          <div class="visit-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <span class="label">Hours</span>
+              <p>Mon, Wed 9am, 5pm &middot; Thu 9am, 12pm &middot; Fri 9am, 8pm<br>Sat, Sun closed, by appointment, call to confirm.</p>
+            </div>
+          </div>
+
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Salon%20de%20Chi%2C%2013179%20Black%20Mountain%20Rd%20Suite%20107%2C%20San%20Diego%2C%20CA%2092129" target="_blank" rel="noopener noreferrer">
+            Get Directions
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+
+        <div class="cta-panel reveal">
+          <h3>Ready for a change?</h3>
+          <p>Reach out to Chi directly to check availability and discuss your hair goals, straightening, color, or a precision cut.</p>
+          <a class="btn btn-primary" href="tel:+16194381409">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (619) 438-1409
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">Salon de Chi</div>
+      <div class="footer-meta">Rancho Peñasquitos, San Diego &middot; Hair Salon</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="tel:+16194381409">Call</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    "use strict";
+
+    // Sticky header shadow on scroll
+    var header = document.getElementById('siteHeader');
+    if (header) {
+      var onScroll = function () {
+        header.classList.toggle('scrolled', window.scrollY > 8);
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    // Mobile nav toggle
+    var toggle = document.getElementById('menuToggle');
+    var mobileNav = document.getElementById('mobile-nav');
+
+    if (toggle && mobileNav) {
+      toggle.addEventListener('click', function () {
+        var isOpen = mobileNav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      });
+
+      mobileNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileNav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Open menu');
+        });
+      });
+    }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      btn.addEventListener('click', function () {
+        var isOpen = item.getAttribute('data-open') === 'true';
+        document.querySelectorAll('.faq-item').forEach(function (other) {
+          other.setAttribute('data-open', 'false');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.setAttribute('data-open', 'true');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Scroll reveal
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+    } else {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+      revealEls.forEach(function (el) { observer.observe(el); });
+    }
+  })();
+</script>
+
+</body>
+</html>
